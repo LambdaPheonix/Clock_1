@@ -10,6 +10,6 @@ function timeCheck(){
 export function attachTimeDiv(){
     let element_div = document.querySelector("#Display_Time");
     element_div.innerHTML = "";
-    element_div.innerHTML = timeCheck();
+    element_div.innerHTML = "<h1>"+timeCheck()+"</h1>";
 }
 
