@@ -1,4 +1,4 @@
-import {wrapDiv} from ".Clock_Format.js";
+import {wrapDiv} from "./Clock_Format.js";
 
 function timeCheck(){
     let time = new Date();
@@ -18,7 +18,6 @@ export function attachTimeDiv(){
 
 function addZeros(text){
     let i = isNaN(Number(text))?null : Number(text);
-    console.log(i);
     if (i == null){
         return text;
     } 
