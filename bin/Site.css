@@ -1,18 +1,40 @@
-body {
-    display: flex;
+body ,html {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(100px 250px);
+    grid-template-rows:repeat(2,minmax(200px 400px)) ;
+    grid-template-areas: 
+        'heading'
+        'clock';     
+
+    gap: 0px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.clock {
+    grid-area: clock;
+    align-self: baseline;
+}
+
+.heading{
+    grid-area: heading;
+    align-self: end;
 }
 
 h1{
     text-align: center;
     margin: 0px;
     width: auto;
-    border-bottom: 2px solid black;
 }
 
 .bg {
     display: flex;
-    align-items: center;
-    border-bottom: 2px solid black;
+    align-items: center;  
     font-size: 34px;
 }
 
